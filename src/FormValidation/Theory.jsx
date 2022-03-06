@@ -56,4 +56,7 @@
  *     + Automatic vendor prefixing: Viết css tiêu chuẩn.
  */
 
+// ************************************************ Hướng dẫn về sử dụng JSS trong React
 // Thì chúng ta sẽ tạo ra 1 cái component giống như là component button, nhưng chúng ta sẽ CSS nó bằng JS
+// Bây giờ chúng ta sẽ viết một cái control chúng ta sẽ không dùng CSS mà chúng ta sẽ dùng JS để định nghĩa cái control ấy, đinh nghĩa một cái button mà nó vẫn xài được các thuộc tính của một button bình thường , không định nghĩa cho nó dùng một props hay gì
+
