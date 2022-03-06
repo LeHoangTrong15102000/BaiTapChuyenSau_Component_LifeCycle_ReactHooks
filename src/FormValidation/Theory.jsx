@@ -34,3 +34,26 @@
 // Không khuyến khích gọi 2 hàm setState liên tục với nhau -> chỉ cần gọi 1 hàm setState và viết nhiều phương thức để thực thi đều đó.
 
 // Ở video sau sẽ hướng dẫn cách duyệt submit lại.-> sẽ chặn nút submit khi mà dữ kiện không hợp lệ
+// Khi nhập mật khẩu sai mà người dùng vẫn có thể nhấn submit được -> nên chúng ta phải fix chỗ này, thì chúng ta sẽ gắn sự kiện submit cho cái form.
+// Bữa sau sẽ học custom Form bằng JSS 
+
+
+// c******************************* Bài học mới - Tìm hiểu về JSS
+/**
+ * JSS là gì ?
+ *      + CSS in JS là một kỹ thuật sử dụng JS để định nghĩa các component kết hơp style css trong 1 file js. Nói nôm na là định nghĩa ra các component như button thẻ a, thẻ div,... có sẵn css bên trong. Cách viết này được gọi là JSS
+ *      + Thường thì đối với việc phát triển UI component này có một số thư viện nổi tiếng như: Styled Components, Radium, Aphrodite, ...
+ * - JSS có thể viết luôn CSS bằng JS này là kỹ thuật rất hay được rất nhiều công ty áp dụng vào.
+ * - Trong phần này chúng ta sẽ học một vài thứ cơ bản và nâng cao của styled Component.
+ * 
+ */
+
+/**
+ * Đối với styled component khi định nghĩa jss sẽ được lợi ích gì ?
+ *     + No class name bugs : Hạn chế lỗi trùng tên lớp bị đè css, ... vì mỗi component tạo ra được đặt 1 css riêng cho nó.
+ *     + Easier deletion of CSS: Xóa css dễ dàng mà không bị ảnh hưởng các control khác.
+ *     + Simple dynamic styling: tùy biến linh động dễ dàng bảo trì và cập nhật.
+ *     + Automatic vendor prefixing: Viết css tiêu chuẩn.
+ */
+
+// Thì chúng ta sẽ tạo ra 1 cái component giống như là component button, nhưng chúng ta sẽ CSS nó bằng JS
